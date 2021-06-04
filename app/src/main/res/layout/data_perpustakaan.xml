@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_margin="4dp"
+        android:elevation="1dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Kartu: "
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/teal_700"/>
+
+            <TextView
+                android:id="@+id/tv_item_id"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="kode"
+                android:layout_marginLeft="15dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Kamu: "
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/purple_200"/>
+
+            <TextView
+                android:id="@+id/tv_item_nama"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginLeft="15dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/purple_200"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempat Lahir Kamu: "
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/Brown"/>
+
+            <TextView
+                android:id="@+id/tv_item_lahir"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lahir"
+                android:layout_marginLeft="15dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/purple_200"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angkatan Kamu: "
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/purple_200"/>
+
+            <TextView
+                android:id="@+id/tv_item_angkatan"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angkatan"
+                android:layout_marginLeft="15dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/purple_200"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor HP : "
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/purple_200"/>
+
+            <TextView
+                android:id="@+id/tv_item_hp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor HP"
+                android:layout_marginLeft="15dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/purple_200"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jurusan Kamu : "
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/purple_200"/>
+
+            <TextView
+                android:id="@+id/tv_item_jurusan"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jurusan"
+                android:layout_marginLeft="15dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/purple_200"
+                android:textColorHint="@color/purple_200" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

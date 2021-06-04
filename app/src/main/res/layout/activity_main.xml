@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Salmon">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        tools:context=".view.MainActivity">
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:gravity="center"
+            android:text="Silahkan Input Data Anda"
+            android:textColor="@color/purple_700"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/data_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_judul"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/Khaki"
+            android:gravity="center"
+            android:hint="Nama Lengkap"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textColorHint="@color/teal_700"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/data_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/data_nama"
+            android:backgroundTint="@color/Pink"
+            android:gravity="center"
+            android:hint="Tempat Lahir"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/PaleGreen"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/data_angkatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/data_lahir"
+            android:backgroundTint="@color/Lavender"
+            android:gravity="center"
+            android:hint="Agama"
+            android:textAlignment="center"
+            android:textColor="@color/Orange"
+            android:textColorHint="@color/Navy"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/data_hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/data_angkatan"
+            android:backgroundTint="@color/SkyBlue"
+            android:gravity="center"
+            android:hint="Nomor HP"
+            android:textAlignment="center"
+            android:textColor="@color/RosyBrown"
+            android:textColorHint="@color/IndianRed"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/data_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/data_hp"
+            android:backgroundTint="@color/Gold"
+            android:gravity="center"
+            android:hint="Email"
+            android:textAlignment="center"
+            android:textColor="@color/DarkRed"
+            android:textColorHint="@color/SeaGreen"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/data_email"
+            android:layout_marginTop="20dp"
+            android:background="@color/cardview_shadow_end_color"></androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rc_main"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="SUBMIT"
+            app:backgroundTint="@color/Brown" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
